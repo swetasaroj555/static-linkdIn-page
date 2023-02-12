@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(247, 239, 239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width:700px) {
+    display: ;
+  }
+}
+
+.left-icon-container > img {
+  object-fit: contain;
+  height: 40px;
+}
+
+.main {
+  width: 100%;
+  position: sticky;
+  display: flex;
+  top: 0;
+  z-index: 999;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(145, 106, 106);
+
+  background-color: aliceblue;
+}
+
+.left-icon-container {
+  display: flex;
+  margin-left: 150px;
+}
+
+.right-icon-container {
+  display: flex;
+  margin-right: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 22px;
+  color: gray;
+  background-color: rgb(250, 241, 241);
+}
+.input {
+  border-style: none;
+  box-sizing: border-box;
+  font-size: medium;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+nav > .right-icon-container > .home {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  font-size: 10px;
+  text-decoration: none;
+  color: rgb(53, 39, 39);
+  transition: 0.5s;
+  text-align: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+nav > .right-icon-container > .home:hover {
+  color: gray;
+  opacity: 0.5;
+}
+
+/* =======Navbar end here======  */
+
+/* ======sidebar start here====== */
+
+.cointainer {
+  display: grid;
+  grid-template-columns: 22.5% 55% 22.5%;
+  gap: 1rem;
+  width: 80%;
+  margin: 1.8rem auto;
+}
+
+aside .main_sidebar {
+  background: rgb(245, 235, 235);
+  border-radius: 0.8rem;
+}
+
+aside .sidebar {
+  background-color: #fff;
+  width: 100%;
+  height: 57vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.sidebar .top {
+  width: 100%;
+  height: 11vh;
+  background: linear-gradient(
+    to right,
+    rgb(240, 7, 77),
+    rgb(154, 180, 3),
+    rgb(3, 71, 28)
+  );
+  position: absolute;
+  border-radius: 10px;
+}
+
+.sidebar img {
+  height: 4rem;
+  width: 4rem;
+  position: relative;
+  margin-top: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 3%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+aside .sidebar .profile {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border-bottom: 1px solid rgb(204, 181, 181);
+  height: 10vh;
+  cursor: pointer;
+}
+
+aside .sidebar .profile h4:hover {
+  text-decoration: underline;
+  color: rgb(206, 135, 135);
+}
+
+.sidebar .view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+  top: 6%;
+  border-bottom: 1px solid rgb(204, 181, 181);
+}
+
+.sidebar .view .connection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.sidebar .view .connection h5 {
+  color: gray;
+}
+
+.sidebar .view .connection:hover {
+  background-color: lightgrey;
+}
+
+.sidebar .view a {
+  color: blue;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.sidebar .view .connection-1 {
+  margin-bottom: 5px;
+}
+
+.sidebar .premium {
+  position: relative;
+  top: 7%;
+  border-bottom: 1px solid rgb(204, 181, 181);
+}
+
+.sidebar .premium h6 {
+  color: gray;
+  font-weight: 200;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebar .premium a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebar .premium a:hover {
+  color: gray;
+}
+
+.sidebar .item {
+  position: relative;
+  top: 7.5%;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.sidebar .item h4 {
+  margin-left: 5px;
+}
+
+aside .recent_jobs {
+  background-color: #fff;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.recent {
+  margin: 15px;
+  color: rgb(122, 108, 108);
+}
+
+.skill {
+  margin-left: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.skill .front,
+.back,
+.pro,
+.soft,
+.problem,
+.business {
+  margin: 5px;
+  color: rgb(121, 105, 105);
+}
+
+.recent_jobs .skill h4:hover {
+  color: black;
+}
+.group {
+  margin-top: 25px;
+  margin-left: 10px;
+  color: rgb(4, 84, 158);
+}
+
+.inner-group {
+  position: relative;
+  top: 2%;
+  display: flex;
+  align-items: center;
+  color: rgb(121, 105, 105);
+  cursor: pointer;
+}
+
+.recent_jobs .inner-group:hover {
+  color: black;
+}
+
+.hashtag {
+  margin-top: 25px;
+  margin-left: 10px;
+  color: rgb(4, 84, 158);
+}
+
+.inner-hashtag {
+  position: relative;
+  top: 2%;
+  display: flex;
+  align-items: center;
+  color: rgb(121, 105, 105);
+  cursor: pointer;
+}
+
+.recent_jobs .inner-hashtag:hover {
+  color: black;
+}
+
+/* ====sidebar end here==== */
+
+/* ====main section start here==== */
+
+.top_section {
+  background-color: #fff;
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.post {
+  position: relative;
+  top: 2%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgb(121, 105, 105);
+  cursor: pointer;
+}
+
+.top_section .post .start_post {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 22px;
+  color: gray;
+  background-color: rgb(253, 249, 249);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.top_section .checkbox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.top_section .checkbox .image,
+.video,
+.event,
+.text_snippet {
+  display: flex;
+}
+
+.top_section .checkbox h3 {
+  color: rgb(134, 128, 128);
+  margin-left: 5px;
+}
+
+.top_section .checkbox .image i {
+  color: aquamarine;
+}
+
+.top_section .checkbox .video i {
+  color: #d92e7f;
+}
+
+.top_section .checkbox .event i {
+  color: brown;
+}
+
+.top_section .checkbox .text_snippet i {
+  color: blue;
+}
+
+main .top_section .checkbox h3:hover {
+  color: rgb(22, 21, 21);
+}
+
+main > .middle_section {
+  background-color: #fff;
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.middle_section .myntra img {
+  float: left;
+}
+
+.middle_section .myntra {
+  margin-top: 10px;
+}
+
+.middle_section .myntra h5 {
+  color: rgb(136, 128, 128);
+}
+
+.middle_section .myntra i {
+  float: right;
+  margin-right: 5px;
+}
+
+.middle_section .img {
+  margin-top: 10px;
+}
+
+.middle_section .like {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(204, 181, 181);
+}
+
+.middle_section .like img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+
+.middle_section .like h4 {
+  margin-left: 20px;
+  color: lightslategray;
+}
+
+.middle_section .likes_icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+.middle_section .likes_icon .chat {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: lightslategray;
+  cursor: pointer;
+}
+
+.middle_section .likes_icon .chat h4 {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.middle_section .likes_icon .chat:hover {
+  color: black;
+}
+
+main .bottom_section {
+  background-color: #fff;
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  margin-top: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bottom_section .creation img {
+  float: left;
+}
+
+.bottom_section .creation {
+  margin-top: 10px;
+}
+
+.bottom_section .creation h5 {
+  color: rgb(136, 128, 128);
+}
+
+.bottom_section .creation i {
+  float: right;
+  margin-right: 5px;
+}
+
+.bottom_section .text-item {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.bottom_section video {
+  margin-top: 10px;
+  border: 1px solid gray;
+}
+
+.bottom_section .like {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(204, 181, 181);
+}
+
+.bottom_section .like img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+
+.bottom_section .like h4 {
+  margin-left: 20px;
+  color: lightslategray;
+}
+
+.bottom_section .likes_icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+}
+
+.bottom_section .likes_icon .chat {
+  display: flex;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: lightslategray;
+  cursor: pointer;
+}
+
+.bottom_section .likes_icon .chat h4 {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.bottom_section .likes_icon .chat:hover {
+  color: black;
+}
+
+/* =========MAIN SECTION END HERE======= */
+
+/* ======RIGHT SECTION START HERE====== */
+
+.right-panel-top {
+  background-color: #fff;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.right-panel .right-panel-top .linkedin-news {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.right-panel .right-panel-top .linkedin-news i {
+  margin-left: 110px;
+}
+
+.right-panel .right-panel-top .linkedin-news h3 {
+  font-weight: bolder;
+}
+
+.right-panel .right-panel-top .daily-news {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Gill Sans", sans-serif;
+  cursor: pointer;
+}
+
+.right-panel .right-panel-top .daily-news .news {
+  margin-left: 5px;
+}
+
+.right-panel .right-panel-top .daily-news .news h4 {
+  font-weight: bold;
+}
+
+.right-panel .right-panel-top .daily-news .news h4:hover {
+  color: lightslategray;
+}
+
+.right-panel .right-panel-top .daily-news .news h5 {
+  color: lightslategray;
+}
+
+.right-panel .right-panel-middle {
+  background-color: #fff;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.right-panel .right-panel-middle .linkedin-news {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.right-panel .right-panel-middle .linkedin-news i {
+  margin-left: 55px;
+}
+
+.right-panel .right-panel-middle .linkedin-news h3 {
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.right-panel .right-panel-middle .daily-news {
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: "Gill Sans", sans-serif;
+  cursor: pointer;
+}
+
+.right-panel .right-panel-middle .daily-news .news {
+  margin-left: 5px;
+}
+
+.right-panel .right-panel-middle .daily-news .news h4 {
+  font-weight: bold;
+
+  margin-right: 5px;
+}
+
+.right-panel .right-panel-middle .daily-news .news h4:hover {
+  color: lightslategray;
+}
+
+.right-panel .right-panel-middle .daily-news .news h5 {
+  color: lightslategray;
+}
+
+.right-panel .right-panel-bottom {
+  background-color: #fff;
+  width: 100%;
+  height: 63vh;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.right-panel .right-panel-bottom .feed {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.right-panel .right-panel-bottom .feed h3 {
+  margin-left: 10px;
+}
+
+.right-panel .right-panel-bottom .feed i {
+  margin-right: 10px;
+}
+
+.right-panel .right-panel-bottom .consumer img {
+  float: left;
+  border-radius: 40px;
+}
+
+.right-panel .right-panel-bottom .consumer {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Gill Sans", sans-serif;
+  border-bottom: 1px solid lightgrey;
+}
+
+.right-panel .right-panel-bottom .consumer h3 {
+  margin-left: 50px;
+}
+
+.right-panel .right-panel-bottom .consumer p {
+  margin-left: 50px;
+  color: lightslategray;
+}
+
+.right-panel .right-panel-bottom .consumer .follow {
+  position: relative;
+  top: 3%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: rgb(121, 105, 105);
+
+  cursor: pointer;
+}
+
+.right-panel .right-panel-bottom .consumer .follow:hover {
+  background-color: cadetblue;
+}
+
+/*    ======RIGHT PANEL END HERE======  */
+
+.left-icon-container input {
+  width: 0;
+  padding: 0;
+}
+.right-icon-container .home {
+  display: none;
+  padding-right: 0;
+  margin: 5px;
+}
